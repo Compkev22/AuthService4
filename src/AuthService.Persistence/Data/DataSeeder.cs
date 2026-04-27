@@ -59,9 +59,7 @@ public static class DataSeeder
 
                     Email = "admin@ksports.local",
 
-                    //Password = passwordHasher.HashPassword("Admin1234!"),
-
-                    Password = "12345678",
+                    Password = passwordHasher.HashPassword("Admin1234!"),
 
                     Status = true,
 
@@ -73,9 +71,9 @@ public static class DataSeeder
 
                         UserId = userId,
 
-                        //ProfilePicture = string.Empty,
+                        ProfilePicture = string.Empty,
 
-                        //Phone = string.Empty
+                        Phone = string.Empty
 
                     },
 
