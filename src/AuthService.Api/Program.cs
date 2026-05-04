@@ -138,7 +138,7 @@ app.UseSecurityHeaders(policies => policies
         builder.AddStyleSrc().Self().UnsafeInline();
         builder.AddImgSrc().Self().Data();
         builder.AddFontSrc().Self().Data();
-        builder.AddConnectSrc().Self();
+        builder.AddConnectSrc().Self().From("http://localhost:5173");
         builder.AddFrameAncestors().None();
         builder.AddBaseUri().Self();
         builder.AddFormAction().Self();
